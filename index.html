@@ -9,7 +9,12 @@
     <meta name="theme-color" content="#f9b41a" >
     <meta name="description" content="Portafolio Web de Leandro Hernández. 
     Desarrollador de software con mas de 4 años de experiencia.">
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/styles-home.css" />
+    <link rel="stylesheet" href="styles/styles-about.css" />
+    <link rel="stylesheet" href="styles/styles-work.css" />
+    <link rel="stylesheet" href="styles/styles-skills.css" />
+    <link rel="stylesheet" href="styles/styles-contact.css" />
     <link
       rel="shortcut icon"
       href="logo.ico"
@@ -105,196 +110,293 @@
                     <h5 class="h5-work"> Practice Tool </h5>
                     
                     <a href="https://practice-tool-web.web.app/" target="_blank" rel="noopener" class="a-work" >
-                        <picture class="picture-work">
+                        <!-- <picture class="picture-work">
                             <img src="images/Practice Tool.PNG" alt="Practice Tool" class="img-work">
-                        </picture>
+                        </picture> -->
+                        <div class="picture-work">
+                            <span class="picture-work-span">¡Ve y empieza a practicar hoy!</span>
+                        </div>
                     </a>
+                    <p class="p-work"> ¿Cansado de olvidar lo que estudias? Practice Tool es la aplicación perfecta para memorizar, practicar y dominar vocabulario en inglés de forma efectiva y personalizada. Diseñada para adaptarse a tu ritmo y nivel, te permite organizar tus palabras, realizar pruebas interactivas y seguir tu progreso como nunca antes. <span class="span-work">¡Convierte el repaso en hábito y el hábito en resultados!</span> </p>
+                    
+                    <div class="cta-container">
+                        <a href="https://practice-tool-web.web.app/" class="a-work-cta">
+                            <button class="button-work"> Empezar a practicar ahora </button>
+                        </a>
+                    </div>
                 </div>
             </div>
-
-            <p class="p-work"> ¿Cansado de olvidar lo que estudias? Practice Tool es la aplicación perfecta para memorizar, practicar y dominar vocabulario en inglés de forma efectiva y personalizada. Diseñada para adaptarse a tu ritmo y nivel, te permite organizar tus palabras, realizar pruebas interactivas y seguir tu progreso como nunca antes. <span class="span-work">¡Convierte el repaso en hábito y el hábito en resultados!</span> </p>
-
-            <a href="https://practice-tool-web.web.app/" class="a-work">
-                <button class="button-work"> Empezar a practicar ahora </button>
-            </a>
 
         </section>
         <!--  -->
         <section class="section-skills" id="skills">
             <h4 class="h4-skills"> Mis <span class="span-h4">Habilidades</span> </h4>
-            <div class="container-skills">
-                <h6 class="h6-skills">Habilidades de Frontend y backend</h6>
-                <div class="box-skills">
-                    <div class="skill-html">
-                        <div class="skill-header">
-                            <label class="label-skill">
-                                HTML
-                                <picture class="picture-skill">
-                                    <img src="logos/logo-html-5.png" alt="HTML" class="img-skill">
-                                </picture>
-                            </label>
-
-                            <span class="span-header">
-                                75%
-                            </span>
+            <div class="containers-skills">
+                <div class="container-skills">
+                    <h6 class="h6-skills">Habilidades de Frontend y backend</h6>
+                    <div class="box-skills">
+                        <div class="box-skill-html">
+                            <div class="skill-header">
+                                <label class="label-skill">
+                                    HTML
+                                    <picture class="picture-skill">
+                                        <img src="logos/logo-html-5.png" alt="HTML" class="img-skill">
+                                    </picture>
+                                </label>
+    
+                                <span class="span-header">
+                                    75%
+                                </span>
+                            </div>
+                            
+                            <progress
+                                max="100"
+                                value="75"
+                                class="progress"
+                            ></progress>
                         </div>
-                        
-                        <progress
-                            max="100"
-                            value="75"
-                            class="progress"
-                        ></progress>
-                    </div>
-                    <div class="skill-css">
-                        <div class="skill-header">
-                            <label class="label-skill">
-                                css
-                                <picture class="picture-skill">
-                                    <img src="logos/logo-css-3.png" alt="css" class="img-skill">
-                                </picture>
-                            </label>
-
-                            <span class="span-header">
-                                85%
-                            </span>
+                        <div class="box-skill-css">
+                            <div class="skill-header">
+                                <label class="label-skill">
+                                    CSS
+                                    <picture class="picture-skill">
+                                        <img src="logos/logo-css-3.png" alt="css" class="img-skill">
+                                    </picture>
+                                </label>
+    
+                                <span class="span-header">
+                                    85%
+                                </span>
+                            </div>
+                            
+                            <progress
+                                max="100"
+                                value="85"
+                                class="progress"
+                            ></progress>
                         </div>
-                        
-                        <progress
-                            max="100"
-                            value="85"
-                            class="progress"
-                        ></progress>
-                    </div>
-                    <div class="skill-angular">
-                        <div class="skill-header">
-                            <label class="label-skill">
-                                angular
-                                <picture class="picture-skill">
-                                    <img src="logos/logo-angular.svg" alt="angular" class="img-skill">
-                                </picture>
-                            </label>
-
-                            <span class="span-header">
-                                80%
-                            </span>
+                        <div class="box-skill-TypeScript">
+                            <div class="skill-header">
+                                <label class="label-skill">
+                                    TypeScript
+                                    <picture class="picture-skill">
+                                        <img src="logos/logo-typescript.svg" alt="TypeScript" class="img-skill">
+                                    </picture>
+                                </label>
+    
+                                <span class="span-header">
+                                    75%
+                                </span>
+                            </div>
+                            
+                            <progress
+                                max="100"
+                                value="85"
+                                class="progress"
+                            ></progress>
                         </div>
-                        
-                        <progress
-                            max="100"
-                            value="80"
-                            class="progress"
-                        ></progress>
-                    </div>
-                    <div class="skill-ionic">
-                        <div class="skill-header">
-                            <label class="label-skill">
-                                ionic
-                                <picture class="picture-skill">
-                                    <img src="logos/logo-ionic.svg" alt="ionic" class="img-skill">
-                                </picture>
-                            </label>
-
-                            <span class="span-header">
-                                70%
-                            </span>
+                        <div class="box-skill-angular">
+                            <div class="skill-header">
+                                <label class="label-skill">
+                                    Angular
+                                    <picture class="picture-skill">
+                                        <img src="logos/logo-angular.svg" alt="angular" class="img-skill">
+                                    </picture>
+                                </label>
+    
+                                <span class="span-header">
+                                    80%
+                                </span>
+                            </div>
+                            
+                            <progress
+                                max="100"
+                                value="80"
+                                class="progress"
+                            ></progress>
                         </div>
-                        
-                        <progress
-                            max="100"
-                            value="70"
-                            class="progress"
-                        ></progress>
-                    </div>
-                    <div class="skill-nestJs">
-                        <div class="skill-header">
-                            <label class="label-skill">
-                                NestJs
-                                <picture class="picture-skill">
-                                    <img src="logos/logo-nestjs.svg" alt="NestJs" class="img-skill">
-                                </picture>
-                            </label>
-
-                            <span class="span-header">
-                                60%
-                            </span>
+                        <div class="box-skill-ionic">
+                            <div class="skill-header">
+                                <label class="label-skill">
+                                    Ionic
+                                    <picture class="picture-skill">
+                                        <img src="logos/logo-ionic.svg" alt="ionic" class="img-skill">
+                                    </picture>
+                                </label>
+    
+                                <span class="span-header">
+                                    70%
+                                </span>
+                            </div>
+                            
+                            <progress
+                                max="100"
+                                value="70"
+                                class="progress"
+                            ></progress>
                         </div>
-                        
-                        <progress
-                            max="100"
-                            value="60"
-                            class="progress"
-                        ></progress>
-                    </div>
-                    <div class="skill-feathersJs">
-                        <div class="skill-header">
-                            <label class="label-skill">
-                                FeathersJs
-                                <picture class="picture-skill">
-                                    <img src="logos/logo-feathersjs.svg" alt="FeathersJs" class="img-skill">
-                                </picture>
-                            </label>
-
-                            <span class="span-header">
-                                55%
-                            </span>
-                        </div>
-                        
-                        <progress
-                            max="100"
-                            value="55"
-                            class="progress"
-                        ></progress>
                     </div>
                 </div>
-            </div>
-            <div class="container-skills">
-                <h6 class="h6-skills">Otras habilidades</h6>
-                <div class="box-skills">
-                    <div class="skill-firebase">
-                        <div class="skill-header">
-                            <label class="label-skill">
-                                Firebase
-                                <picture class="picture-skill">
-                                    <img src="logos/logo-firebase.svg" alt="Firebase" class="img-skill">
-                                </picture>
-                            </label>
-
-                            <span class="span-header">
-                                70%
-                            </span>
+                <div class="subcontainer-skills">
+                    <div class="container-skills">
+                        <h6 class="h6-skills">Otras habilidades</h6>
+                        <div class="box-skills">
+                        <div class="box-skill-nestJs">
+                            <div class="skill-header">
+                                <label class="label-skill">
+                                    NestJs
+                                    <picture class="picture-skill">
+                                        <img src="logos/logo-nestjs.svg" alt="NestJs" class="img-skill">
+                                    </picture>
+                                </label>
+    
+                                <span class="span-header">
+                                    60%
+                                </span>
+                            </div>
+                            
+                            <progress
+                                max="100"
+                                value="60"
+                                class="progress"
+                            ></progress>
                         </div>
-                        
-                        <progress
-                            max="100"
-                            value="70"
-                            class="progress"
-                        ></progress>
+                        <div class="box-skill-feathersJs">
+                            <div class="skill-header">
+                                <label class="label-skill">
+                                    FeathersJs
+                                    <picture class="picture-skill">
+                                        <img src="logos/logo-feathersjs.svg" alt="FeathersJs" class="img-skill">
+                                    </picture>
+                                </label>
+    
+                                <span class="span-header">
+                                    55%
+                                </span>
+                            </div>
+                            
+                            <progress
+                                max="100"
+                                value="55"
+                                class="progress"
+                            ></progress>
+                        </div>
+                        </div>
                     </div>
-                    <div class="skill-git">
-                        <div class="skill-header">
-                            <label class="label-skill">
-                                Git
-                                <picture class="picture-skill">
-                                    <img src="logos/logo-git-3.png" alt="Git" class="img-skill">
-                                </picture>
-                            </label>
-
-                            <span class="span-header">
-                                70%
-                            </span>
+                    <div class="container-skills">
+                        <h6 class="h6-skills">Otras habilidades</h6>
+                        <div class="box-skills">
+                            <div class="box-skill-firebase">
+                                <div class="skill-header">
+                                    <label class="label-skill">
+                                        Firebase
+                                        <picture class="picture-skill">
+                                            <img src="logos/logo-firebase.svg" alt="Firebase" class="img-skill">
+                                        </picture>
+                                    </label>
+        
+                                    <span class="span-header">
+                                        70%
+                                    </span>
+                                </div>
+                                
+                                <progress
+                                    max="100"
+                                    value="70"
+                                    class="progress"
+                                ></progress>
+                            </div>
+                            <div class="box-skill-git">
+                                <div class="skill-header">
+                                    <label class="label-skill">
+                                        Git
+                                        <picture class="picture-skill">
+                                            <img src="logos/logo-git.svg" alt="Git" class="img-skill">
+                                        </picture>
+                                    </label>
+        
+                                    <span class="span-header">
+                                        70%
+                                    </span>
+                                </div>
+                                
+                                <progress
+                                    max="100"
+                                    value="70"
+                                    class="progress"
+                                ></progress>
+                            </div>
                         </div>
-                        
-                        <progress
-                            max="100"
-                            value="70"
-                            class="progress"
-                        ></progress>
                     </div>
                 </div>
             </div>
         </section>
         <!--  -->
-        <section class="section-contact" id="contact"></section>
+        <section class="section-contact" id="contact">
+            <h4 class="h4-skills"> Contacta<span class="span-h4">Me</span> </h4>
+            <form action="https://formsubmit.co/13f5d594f55b5942ba67db651e944cc9 " method="post" class="form-contact">
+                <div class="inputs-contact">
+                    <div class="inputs-contact-subsection">
+                        <input
+                            type="text"
+                            placeholder="Nombre Completo"
+                            class="input-name"
+                            name="name"
+                            required
+                        />
+                        <div class="phone-container">
+                            <input
+                                type="number"
+                                placeholder="57"
+                                class="input-phone-code"
+                                name="phone-code"
+                                min="1"
+                                max="999"
+                                maxlength="3"
+                                required
+                            />
+                            <input
+                                type="number"
+                                placeholder="Número de Telefono"
+                                class="input-phone"
+                                name="phone"
+                                minlength="9"
+                                maxlength="12"
+                                required
+                            />
+                        </div>
+                    </div>
+                    <div class="inputs-contact-subsection">
+                        <input 
+                            type="email" 
+                            placeholder="Correo" 
+                            class="input-email" 
+                            name="email"
+                            required 
+                        />
+                        <input
+                            type="text"
+                            placeholder="Tema del Mensaje"
+                            class="input-subject"
+                            name="subject"
+                            required
+                        />
+                    </div>
+                </div>
+                <textarea
+                    cols="30"
+                    rows="10"
+                    placeholder="Mensage"
+                    class="textarea-message"
+                    name="message"
+                    required
+                ></textarea>
+            </form>
+          <label for="submit" class="button-submit" title="Enviar Mensaje">Enviar</label>
+          <input type="submit" class="button input-submit-contact" id="submit"></input>
+          <input type="hidden" name="_next" value="https://leandrohernandez.github.io/PortafolioWeb/#contact">
+          <input type="hidden" name="_captcha" value="false">
+        </section>
     </main>
 </body>
 </html>

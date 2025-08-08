@@ -1,0 +1,89 @@
+
+
+.section-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 3rem;
+}
+
+.picture-about {
+    width: clamp( 10rem, 20vw, 20rem );
+    aspect-ratio: 4/5;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-radius: 1rem;
+
+    view-timeline-name: --picture;
+    animation-timeline: --picture;
+    animation-name: from-right;
+
+    z-index: 0;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(../images/paisaje.jpg);
+        background-size: 150%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        border-radius: 1rem;
+        filter: blur(.3rem);
+        
+        transition: .2s ease-in;
+        transition-property: background-size, filter;
+        
+        z-index: 0;
+    }
+        
+
+    .img-about {
+        position: absolute;
+        bottom: 0;
+        height: 100%;
+        transform: translateY(-7.5%) scale(1.15) ;
+
+        transition: .2s transform ease-in;
+
+        mask-image: linear-gradient( black 97%, transparent );
+    }
+
+
+    &:hover {
+
+        &::before {
+            background-size: 100%;
+            filter: blur(0);
+        }
+
+        .img-about {
+            transform: translateY(10%) scale(.8) ;
+            mask-image: linear-gradient( black 97.5%, transparent );
+        }
+    }
+}
+
+.h6-about {
+    font-size: 1.5rem;
+
+    view-timeline-name: --h6-about;
+    animation-timeline: --h6-about;
+    animation-name: from-left;
+}
+
+.p-about {
+    font-size: clamp( .7rem, 1vw, 1rem );
+
+    view-timeline-name: --p-about;
+    animation-timeline: --p-about;
+    animation-name: from-bottom;
+}

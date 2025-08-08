@@ -1,0 +1,113 @@
+
+
+.section-work {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.project-work {
+    display: grid;
+    gap: 2rem;
+}
+
+.h5-work {
+    font-size: 1.3rem;
+    width: 70%;
+
+    border-bottom: .15rem solid var(--accent);
+
+    view-timeline-name: --h5-work;
+    animation-timeline: --h5-work;
+    animation-name: from-left;
+}
+
+.picture-work {
+    position: relative;
+    max-height: 65vh;
+    width: 100%;
+    aspect-ratio: 2/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/Practice\ Tool.PNG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: start;
+
+    view-timeline-name: --picture-work;
+    animation-timeline: --picture-work;
+    animation-name: from-bottom;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(.2rem);
+        opacity: 0;
+
+        transition: .2s opacity ease-in;
+    }
+
+    .picture-work-span {
+        position: absolute;
+        font-weight: 600;
+        color: var(--accent);
+        font-size: clamp(1rem, 5vw, 2rem);
+        z-index: 1;
+        opacity: 0;
+
+        transition: .2s ease-in;
+        transition-property: opacity, transform;
+        transform: translateY(10rem);
+    }
+
+    &:hover {
+        &::before {
+            opacity: 1;
+        }
+        .picture-work-span {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+.p-work {
+    font-size: clamp(.7rem, 3vw, 1rem);
+
+    view-timeline-name: --P-work;
+    animation-timeline: --P-work;
+    animation-name: from-top;
+}
+
+.cta-container {
+    display: flex;
+    justify-content: center;
+}
+
+.a-work-cta {
+    width: max-content;
+    margin-top: 2rem;
+
+    view-timeline-name: --a-work-cta;
+    animation-timeline: --a-work-cta;
+    animation-name: from-right;
+    
+    .button-work {
+        cursor: pointer;
+        padding: 1rem;
+        font-size: clamp(.8rem, 3vw, 1rem);
+        font-weight: 700;
+        background-color: var(--accent);
+        color: var(--primary);
+        border: none;
+        outline: none;
+        border-radius: .5rem;
+    }
+}
