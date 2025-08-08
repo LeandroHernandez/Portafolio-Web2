@@ -139,16 +139,19 @@
     flex-wrap: wrap;
     gap: .7rem 1rem;
 
-    .button:first-child {
+    .a-actions:first-child {
         animation-name: to-top;
         animation-timeline: --section-home;
         animation-range: exit 15% exit 35%;
     }
 
-    .button:last-child {
-        background-color: var(--primary);
-        color: var(--accent);
-        border: var(--border);
+    .a-actions:last-child {
+
+        .button {
+            background-color: var(--primary);
+            color: var(--accent);
+            border: var(--border);
+        }
         
         animation-name: to-bottom;
         animation-timeline: --section-home;
@@ -168,7 +171,8 @@
     cursor: pointer;
 }
 
-.button, .li {
+/* .button, .li { */
+.a-actions .button, .li {
     transition: .2s transform ease-in;
     
     &:hover {
