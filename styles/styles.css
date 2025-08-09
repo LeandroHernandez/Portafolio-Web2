@@ -27,13 +27,6 @@
   animation-fill-mode: both;
 }
 
-@supports not (animation-timeline: auto) {
-    .main {
-        background-color: red;
-        border: 1rem solid green;
-    }
-}
-
 @keyframes show {
     from {
         opacity: 0;
