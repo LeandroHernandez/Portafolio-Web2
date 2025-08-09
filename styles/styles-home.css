@@ -1,9 +1,74 @@
 
+@supports (animation-timeline: auto) {
+    .section-home {
+        view-timeline-name: --section-home;
+    }
+
+    .texts-home {
+        
+        .h1 {
+            animation-name: to-left;
+            animation-timeline: --section-home;
+            animation-range: exit 5% exit 50%;
+        }
+        
+        .h2 {
+            animation-name: hide;
+            animation-timeline: --section-home;
+            animation-range: exit 5% exit 25%;
+        }
+        
+        .mantra {
+            
+            .p {
+                animation-name: hide;
+                animation-timeline: --section-home;
+                animation-range: exit 5% exit 25%;
+            }
+            
+            .span {
+                animation-name: to-top;
+                animation-timeline: --section-home;
+                animation-range: exit 5% exit 30%;
+            }
+        }
+    }
+    
+    .actions-home {
+        
+        .a-actions:first-child {
+            animation-name: to-top;
+            animation-timeline: --section-home;
+            animation-range: exit 15% exit 35%;
+        }
+        
+        .a-actions:last-child {
+            
+            animation-name: to-bottom;
+            animation-timeline: --section-home;
+            animation-range: exit 15% exit 35%;
+        }
+    }
+    
+    .media-home {
+        animation-name: to-right;
+        animation-timeline: --section-home;
+        animation-range: exit 15% exit 30%;
+    }
+    
+    .picture-home {
+        animation-timeline: --section-home;
+        animation-name: to-right;
+        animation-range: exit 15% exit 100%;
+    }
+
+}
+
 .section-home {
     display: flex;
     flex-wrap: wrap;
     gap: 20px 0;
-    view-timeline-name: --section-home;
+    /* view-timeline-name: --section-home; */
     overflow: hidden;
 }
 
@@ -22,12 +87,13 @@
     flex-direction: column;
     gap: .5rem;
 
+
     .h1 {
         font-size: clamp(1.7rem, 5vw, 3rem);
         
-        animation-name: to-left;
+        /* animation-name: to-left;
         animation-timeline: --section-home;
-        animation-range: exit 5% exit 50%;
+        animation-range: exit 5% exit 50%; */
     }
 
     .h2 {
@@ -37,9 +103,9 @@
         width: max-content;
         position: relative;
 
-        animation-name: hide;
+        /* animation-name: hide;
         animation-timeline: --section-home;
-        animation-range: exit 5% exit 25%;
+        animation-range: exit 5% exit 25%; */
     }
 
     .h2::after {
@@ -89,16 +155,16 @@
             width: 100%;
             color: var(--accent4);
             
-            animation-name: hide;
+            /* animation-name: hide;
             animation-timeline: --section-home;
-            animation-range: exit 5% exit 25%;
+            animation-range: exit 5% exit 25%; */
         }
         
         .span {
             font-weight: 600;
-            animation-name: to-top;
+            /* animation-name: to-top;
             animation-timeline: --section-home;
-            animation-range: exit 5% exit 30%;
+            animation-range: exit 5% exit 30%; */
         }
     }
 }
@@ -139,11 +205,11 @@
     flex-wrap: wrap;
     gap: .7rem 1rem;
 
-    .a-actions:first-child {
+    /* .a-actions:first-child {
         animation-name: to-top;
         animation-timeline: --section-home;
         animation-range: exit 15% exit 35%;
-    }
+    } */
 
     .a-actions:last-child {
 
@@ -153,9 +219,9 @@
             border: var(--border);
         }
         
-        animation-name: to-bottom;
+        /* animation-name: to-bottom;
         animation-timeline: --section-home;
-        animation-range: exit 15% exit 35%;
+        animation-range: exit 15% exit 35%; */
     }
 }
 
@@ -187,9 +253,9 @@
 
     width: max-content;
     
-    animation-name: to-right;
+    /* animation-name: to-right;
     animation-timeline: --section-home;
-    animation-range: exit 15% exit 30%;
+    animation-range: exit 15% exit 30%; */
 
     .a-media {
         border: var(--border);
@@ -228,10 +294,9 @@
 
     mix-blend-mode: lighten;
 
-    /* view-timeline-name: --picture-home; */
-    animation-timeline: --section-home;
+    /* animation-timeline: --section-home;
     animation-name: to-right;
-    animation-range: exit 15% exit 100%;
+    animation-range: exit 15% exit 100%; */
 
     
     [class^="img"] {
